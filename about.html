@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About Us | Settlement Group</title>
+<meta name="description" content="Learn about Settlement Group — life settlement industry leaders with 20+ years of experience helping policy holders, advisors, and investors." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <nav class="nav" aria-label="Primary">
+      <a href="index.html" class="logo" aria-label="Settlement Group home">
+        <img src="logo-transparent.png" alt="Settlement Group" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="investors.html">Investors</a></li>
+        <li>
+          <span class="nav-trigger">Brokers <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+          <ul class="nav-submenu">
+            <li><a href="advisors.html">Advisors</a></li>
+            <li><a href="brokers.html">Brokers &amp; Agents</a></li>
+            <li><a href="financial-professionals.html">Financial Professionals</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="nav-trigger">Policy Sellers <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+          <ul class="nav-submenu">
+            <li><a href="policy-sellers.html">Life Settlements</a></li>
+            <li><a href="viatical-settlements.html">Viatical Settlements</a></li>
+          </ul>
+        </li>
+        <li>
+          <span class="nav-trigger">Affiliates <svg class="nav-caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg></span>
+          <ul class="nav-submenu">
+            <li><a href="https://www.settlementoptions.io/" target="_blank" rel="noopener">Settlement Options</a></li>
+            <li><a href="https://www.settlementservices.io/" target="_blank" rel="noopener">Settlement Services</a></li>
+          </ul>
+        </li>
+        <li><a href="about.html" class="active">About</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="contact.html" class="btn btn-ghost">Contact</a>
+        <a href="contact.html" class="btn btn-primary">Get a Quote</a>
+        <button class="burger" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mobile-menu">
+  <div class="mobile-menu-head">
+    <a href="index.html" class="logo"><img src="logo-transparent.png" alt="Settlement Group" style="height:40px"/></a>
+    <button class="mobile-menu-close" aria-label="Close menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <a href="index.html">Home</a>
+  <a href="investors.html">Investors</a>
+  <div class="group-label">Brokers</div>
+  <a href="advisors.html" class="sub">Advisors</a>
+  <a href="brokers.html" class="sub">Brokers &amp; Agents</a>
+  <a href="financial-professionals.html" class="sub">Financial Professionals</a>
+  <div class="group-label">Policy Sellers</div>
+  <a href="policy-sellers.html" class="sub">Life Settlements</a>
+  <a href="viatical-settlements.html" class="sub">Viatical Settlements</a>
+  <div class="group-label">Affiliates</div>
+  <a href="https://www.settlementoptions.io/" class="sub" target="_blank">Settlement Options</a>
+  <a href="https://www.settlementservices.io/" class="sub" target="_blank">Settlement Services</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-primary" style="margin-top:20px">Get a Quote</a>
+</div>
+
+
+
+<style>/* about-page additions */
+  /* Hero floats + image */
+  .hero{
+    position:relative;overflow:hidden;
+    padding-top:64px;padding-bottom:48px;
+    background:
+      radial-gradient(1200px 500px at 85% -10%, rgba(46,91,124,.10), transparent 60%),
+      radial-gradient(900px 400px at -10% 30%, rgba(201,164,90,.06), transparent 60%),
+      #fff;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+  @media (max-width:960px){.hero-grid{grid-template-columns:1fr;gap:40px}}
+  .hero h1{margin-top:20px}
+  .hero h1 em{font-style:italic;color:var(--brand-700);font-weight:500}
+  .hero .sub{font-size:1.15rem;color:var(--ink-500);max-width:520px;margin:18px 0 28px}
+  .hero-cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center;margin-bottom:22px}
+  .hero-meta{display:flex;gap:22px;flex-wrap:wrap;color:var(--ink-500);font-size:.92rem}
+  .hero-meta span{display:inline-flex;align-items:center;gap:8px}
+  .hero-meta svg{width:16px;height:16px;color:var(--brand-700)}
+  .hero-visual{position:relative}
+  .hero-image{
+    position:relative;border-radius:var(--radius-xl);overflow:hidden;
+    box-shadow:var(--shadow-lg);aspect-ratio:4/5;
+    background:linear-gradient(135deg,#cddae8,#e6eff6);
+  }
+  .hero-image svg{width:100%;height:100%}
+  .hero-image img{width:100%;height:100%;object-fit:cover;display:block}
+  .hero-image-overlay{
+    position:absolute;inset:0;
+    background:linear-gradient(180deg, rgba(26,58,82,0.05) 0%, rgba(26,58,82,0.25) 100%);
+    pointer-events:none;
+  }
+  .hero-float-card{
+    position:absolute;left:-28px;bottom:36px;
+    background:#fff;border-radius:var(--radius);padding:14px 18px;
+    box-shadow:var(--shadow-lg);display:flex;align-items:center;gap:12px;
+    border:1px solid var(--ink-100);
+  }
+  .hero-float-card .float-icon{
+    width:38px;height:38px;border-radius:10px;background:var(--brand-100);
+    display:grid;place-items:center;
+  }
+  .hero-float-card strong{font-size:.92rem;display:block;color:var(--ink-900)}
+  .hero-float-card small{color:var(--ink-500);font-size:.8rem}
+  .hero-float-stat{
+    position:absolute;right:-20px;top:40px;
+    background:var(--brand-900);color:#fff;border-radius:var(--radius);
+    padding:16px 20px;box-shadow:var(--shadow-lg);
+  }
+  .hero-float-stat b{font-family:var(--font-display);font-size:1.7rem;display:block;line-height:1}
+  .hero-float-stat small{opacity:.75;font-size:.78rem;letter-spacing:.05em;text-transform:uppercase}
+  @media (max-width:600px){
+    .hero-float-card{left:12px;bottom:12px}
+    .hero-float-stat{right:12px;top:12px;padding:12px 14px}
+    .hero-float-stat b{font-size:1.2rem}
+  }
+
+  /* Qualifier */
+  .qualifier{background:var(--bg-soft);border-top:1px solid var(--ink-100);border-bottom:1px solid var(--ink-100)}
+  .qualifier-head{text-align:center;max-width:680px;margin:0 auto 36px}
+  .qualifier-head h2{margin-bottom:10px}
+  .qualifier-head h2 em{font-style:italic;color:var(--brand-700);font-weight:500}
+  .qualifier-head p{color:var(--ink-500)}
+  .qual-card{
+    background:#fff;border-radius:var(--radius-xl);
+    padding:36px;max-width:720px;margin:0 auto;
+    box-shadow:var(--shadow);border:1px solid var(--ink-100);
+  }
+  @media (max-width:600px){.qual-card{padding:24px}}
+  .qual-progress{display:flex;gap:8px;margin-bottom:24px}
+  .qual-progress span{height:6px;flex:1;border-radius:999px;background:var(--ink-100);transition:background .3s ease}
+  .qual-progress span.active{background:var(--brand-700)}
+  .qual-step{display:none}
+  .qual-step.active{display:block;animation:fadeIn .35s ease}
+  @keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  .qual-label{font-size:.8rem;color:var(--ink-500);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px;font-weight:600}
+  .qual-q{font-family:var(--font-display);font-size:1.4rem;font-weight:600;margin-bottom:22px;color:var(--ink-900);line-height:1.25}
+  .qual-options{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:540px){.qual-options{grid-template-columns:1fr}}
+  .qual-option{
+    padding:18px;border:1.5px solid var(--ink-200);border-radius:var(--radius);
+    text-align:left;background:#fff;font:inherit;color:var(--ink-900);
+    transition:all .15s ease;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  .qual-option:hover{border-color:var(--brand-700);background:var(--brand-50)}
+  .qual-option.selected{border-color:var(--brand-700);background:var(--brand-50);box-shadow:0 0 0 4px rgba(46,91,124,.12)}
+  .qual-option .check{
+    width:22px;height:22px;border-radius:50%;border:1.5px solid var(--ink-200);
+    display:grid;place-items:center;flex-shrink:0;transition:all .15s ease;
+  }
+  .qual-option.selected .check{background:var(--brand-700);border-color:var(--brand-700)}
+  .qual-option.selected .check::after{content:"";width:8px;height:8px;border-radius:50%;background:#fff}
+  .qual-input{
+    width:100%;padding:16px 18px;border:1.5px solid var(--ink-200);border-radius:var(--radius);
+    font:inherit;color:var(--ink-900);background:#fff;
+  }
+  .qual-input:focus{outline:none;border-color:var(--brand-700);box-shadow:0 0 0 4px rgba(46,91,124,.12)}
+  .qual-actions{display:flex;justify-content:space-between;align-items:center;margin-top:26px;gap:12px}
+  .qual-back{color:var(--ink-500);font-size:.9rem;font-weight:500;background:none;border:none;cursor:pointer}
+  .qual-back:hover{color:var(--ink-900)}
+  .qual-privacy{text-align:center;margin-top:18px;color:var(--ink-500);font-size:.85rem;display:flex;align-items:center;justify-content:center;gap:8px}
+  .qual-privacy svg{width:14px;height:14px;color:var(--brand-700)}
+
+  /* Trust strip */
+  .trust-strip{background:var(--brand-900);color:#fff;padding:56px 0}
+  .trust-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}
+  @media (max-width:800px){.trust-grid{grid-template-columns:1fr;gap:24px}}
+  .trust-item{display:flex;gap:18px;align-items:flex-start}
+  .trust-icon{
+    width:48px;height:48px;border-radius:12px;
+    background:rgba(255,255,255,.08);display:grid;place-items:center;flex-shrink:0;
+    border:1px solid rgba(255,255,255,.12);
+  }
+  .trust-icon svg{width:22px;height:22px;color:var(--gold)}
+  .trust-item h3{font-family:var(--font-body);font-size:1.05rem;font-weight:600;margin-bottom:4px;color:#fff}
+  .trust-item p{color:rgba(255,255,255,.72);font-size:.95rem;margin:0}
+
+  /* How */
+  .how-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+  @media (max-width:900px){.how-grid{grid-template-columns:1fr}}
+  .how-step{
+    background:#fff;border:1px solid var(--ink-100);border-radius:var(--radius-lg);
+    padding:32px;position:relative;
+    transition:all .25s ease;
+  }
+  .how-step:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--brand-400)}
+  .how-num{
+    font-family:var(--font-display);font-size:2.6rem;font-weight:500;
+    color:var(--brand-700);font-style:italic;line-height:1;
+    margin-bottom:16px;
+  }
+  .how-step h3{margin-bottom:8px}
+  .how-step p{font-size:.98rem;color:var(--ink-500);margin:0}
+
+  /* Trust paragraph */
+  .trust-pp{background:var(--bg-soft);border-top:1px solid var(--ink-100);border-bottom:1px solid var(--ink-100)}
+  .trust-pp-grid{display:grid;grid-template-columns:0.9fr 1.2fr;gap:64px;align-items:start}
+  @media (max-width:900px){.trust-pp-grid{grid-template-columns:1fr;gap:32px}}
+  .trust-pp h2 em{font-style:italic;color:var(--brand-700);font-weight:500}
+  .trust-pp-body p{font-size:1.05rem;color:var(--ink-700);line-height:1.75;margin-bottom:18px}
+
+  /* Diff */
+  .diff{background:#fff}
+
+  /* Industry section */
+  .industry-section{background:var(--bg-soft);border-top:1px solid var(--ink-100)}
+  .industry-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+  @media (max-width:900px){.industry-grid{grid-template-columns:1fr;gap:32px}}
+  .industry-img svg{width:100%;height:auto;border-radius:var(--radius-xl);box-shadow:var(--shadow-lg)}
+  .industry-img img{width:100%;height:auto;aspect-ratio:5/4;object-fit:cover;border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);display:block}
+  .industry-section h2 em{font-style:italic;color:var(--brand-700);font-weight:500}
+</style>
+
+<section class="page-hero with-image">
+  <div class="container">
+    <div class="page-hero-grid">
+      <div>
+        <div class="breadcrumbs">
+          <a href="index.html">Home</a><span>·</span><span>About</span>
+        </div>
+        <span class="eyebrow">About Settlement Group</span>
+        <h1>Industry leaders with a passion for <em>educating</em> and <em>supporting</em> the Life Settlement community.</h1>
+        <p class="lead">The Settlement Group was founded to assist individuals and businesses that currently own a life insurance policy. Our goal is to bridge the gap between policy owners and investors who are looking to purchase life insurance policies.</p>
+      </div>
+      <div class="page-hero-image">
+        <img src="https://images.unsplash.com/photo-1638262052640-82e94d64664a?w=1000&q=80&auto=format&fit=crop" alt="Two professionals shaking hands in partnership over a wooden table" loading="eager" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="trust-strip">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+        <div><h3>20+ Years in Business</h3><p>Two decades of deep industry expertise.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+        <div><h3>$10 Billion+ Transacted</h3><p>In Life Settlement transactions.</p></div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+        <div><h3>Licensed in 36 States</h3><p>Fully compliant nationwide.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="content-section">
+  <div class="container content-grid">
+    <h2>Our <em>People</em></h2>
+    <div class="content-body">
+      <p>We understand that at the core of every company are hard working people. The secret to a successful company is truly recognizing that talent. Our team's passion for their work is the real driving force behind what we are able to accomplish together.</p>
+      <p>Settlement Group was founded to assist individuals and businesses that currently own a life insurance policy. Our goal is to bridge the gap between policy owners and investors who are looking to purchase life insurance policies. Seeing firsthand so many situations where the course of someone's life was positively impacted by Life Settlements has driven us to be industry leaders and provide education and support to the Life Settlement industry.</p>
+    </div>
+  </div>
+</section>
+
+<section class="content-section" style="background:var(--bg-soft);border-top:1px solid var(--ink-100);border-bottom:1px solid var(--ink-100)">
+  <div class="container content-grid">
+    <h2>What sets <em>us apart</em></h2>
+    <div class="content-body">
+      <ul class="content-list">
+        <li>A superior level of customer service</li>
+        <li>Turnkey marketing programs to identify new revenue opportunities</li>
+        <li>Ability to purchase life insurance policies with a broad range of face values</li>
+        <li>Institutional funding</li>
+        <li>Competitive pricing for each individual case</li>
+      </ul>
+      <div class="callout">
+        <p><strong>We believe in building trusting relationships</strong> by working fast, hard and smart to help you to realize the successful outcome that you deserve.</p>
+        <p><a href="contact.html" style="color:var(--brand-700);font-weight:600">Contact us today</a> to begin your partnership with Settlement Group.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============== FINAL CTA STRIP ============== -->
+<section class="cta-strip">
+  <div class="container cta-strip-inner">
+    <h2>Begin your <em>partnership</em> with Settlement Group</h2>
+    <p>We believe in building trusting relationships by working fast, hard and smart to help you realize the successful outcome that you deserve.</p>
+    <div class="cta-strip-actions">
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <a href="about.html" class="btn btn-white">Learn About Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="logo-white.png" alt="Settlement Group" />
+        <p>A trusted name in life settlements — pairing transparency with experience for advisors, investors, and policy holders alike.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Solutions</h4>
+        <a href="policy-sellers.html">Life Settlements</a>
+        <a href="viatical-settlements.html">Viatical Settlements</a>
+        <a href="investors.html">For Investors</a>
+        <a href="advisors.html">For Advisors</a>
+        <a href="brokers.html">For Brokers</a>
+      </div>
+      <div class="footer-col">
+        <h4>Corporate HQ</h4>
+        <a href="https://g.co/kgs/3reo2uZ" target="_blank" rel="noopener">501 E. Las Olas Blvd<br>Ste 200<br>Fort Lauderdale, FL 33301</a>
+        <a href="tel:9128820840" style="margin-top:10px">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.95.37 1.88.72 2.76a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.32-1.32a2 2 0 0 1 2.11-.45c.88.35 1.81.59 2.76.72A2 2 0 0 1 22 16.92z"/></svg>
+          912-882-0840
+        </a>
+        <a href="tel:9128820609">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          912-882-0609 (Fax)
+        </a>
+        <a href="mailto:sales@settlementgroup.io">
+          <svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          sales@settlementgroup.io
+        </a>
+      </div>
+      <div class="footer-col">
+        <h4>Newsletter</h4>
+        <p style="font-size:.92rem;color:rgba(255,255,255,.7);margin-bottom:14px">Subscribe to receive updates on the latest news.</p>
+        <form class="newsletter-form" novalidate>
+          <input type="email" placeholder="your@email.com" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Settlement Group. All rights reserved.</span>
+      <span><em>A partner you can trust.</em></span>
+      <span>Privacy · Terms</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
